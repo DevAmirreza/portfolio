@@ -8,9 +8,16 @@ echo $msg ;
 <html>
 <head>
 <title><?php app_display($title) ; ?></title>
+<link rel="stylesheet" href="/styles/template.css"  />
 </head>
 <body>
- <h1><?php app_display($title) ; ?></h1>
+ <div class="header">
+ <?php app_display($title) ; ?>
+ 
+ </div>
+ 
+ 
+ 
  
    </body>
 
