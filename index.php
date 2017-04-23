@@ -9,6 +9,7 @@ echo $msg ;
 <head>
 <title><?php app_display($title) ; ?></title>
 <link rel="stylesheet" href="styles/template.css"  />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="container">
