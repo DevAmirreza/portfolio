@@ -1,6 +1,6 @@
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes banner {
-    0%   {top:-250px ;}
+    0%   {top:0;}
     100% {top:0;}
 }
 
@@ -14,7 +14,8 @@
 }	
 
 body{
-overflow:hidden ;
+overflow-x:hidden ;
+height:1000px ;
 }
 
 @media screen and (max-width: 500px) {
@@ -42,6 +43,7 @@ top:0 ;
     animation-name: banner;
     animation-duration: 1.5s;
 	-webkit-transform: translateZ(0);
+	background-attachment:fixed ; 
 }
 
 

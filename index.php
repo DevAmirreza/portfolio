@@ -1,8 +1,14 @@
-<?php
+8<?php
 $title =  "Amirreza Portfolio" ; 
 function app_display($msg) {
 echo $msg ; 
 }
+
+
+function connectToDB(){	
+$con =  oci_connect ( 'AYadollahibastani' , 'AYadollahibastani', 'csdev.cegep-heritage.qc.ca') or die('Error establishing database connection ')  ; 
+}
+
 
 ?>
 <html>
