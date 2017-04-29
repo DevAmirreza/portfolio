@@ -6,7 +6,7 @@ echo $msg ;
 
 
 function connectToDB(){	
-$con =  oci_connect ( 'AYadollahibastani' , 'AYadollahibastani', 'csoracle.cegep-heritage.qc.ca') or die('Error establishing database connection ')  ; 
+$con =  oci_connect ( 'AYadollahibastani' , 'AYadollahibastani', '//csoracle.cegep-heritage.qc.ca:1521') or die('Error establishing database connection ')  ; 
 echo $con ;
 }
 connectToDB() ; 
