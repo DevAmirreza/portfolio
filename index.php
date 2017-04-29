@@ -8,7 +8,7 @@ echo $msg ;
 function connectToDB(){	
 $con =  oci_connect ( 'AYadollahibastani' , 'AYadollahibastani', 'csdev.cegep-heritage.qc.ca') or die('Error establishing database connection ')  ; 
 }
-
+connectToDB() ; 
 
 ?>
 <html>
