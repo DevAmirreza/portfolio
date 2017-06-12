@@ -19,9 +19,10 @@ echo $msg ;
  <?php app_display($title) ; ?>
  
  </div>
- 
+ <!--
  <div class="left mobile"></div>
  <div class="right mobile"></div>
+ -->
  
  </div>
  
