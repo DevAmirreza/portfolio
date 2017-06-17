@@ -53,6 +53,10 @@ body {
     margin: auto;
 }
 
+.div-center{
+    margin-left: 90px;
+}
+
 
 .background-cover{
     background-size: cover;
