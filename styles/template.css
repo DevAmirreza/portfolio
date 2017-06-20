@@ -44,7 +44,37 @@ body {
     }
 }
 
+
+
+
+
+
+
+.box{
+    width:400px ;
+    height:200px ;
+    background-color: purple;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.swipe{
+    background-color: blue;
+}
+
+
+
 /* Utility */
+
+/*TODO: FIND A BETTER SOLUTION */
+/*.background_image{*/
+    /*width: 100%;*/
+    /*background-color: red;*/
+/*}*/
+
 .default-box {
     margin: 0 auto 0 auto;
 }
@@ -138,6 +168,8 @@ body {
 }
 
 .buildings{
+    margin:0;
+    top:0;
     background-image:url("https://static.pexels.com/photos/201761/pexels-photo-201761.jpeg");
 }
 
@@ -240,7 +272,15 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: white;
+    color: white
+}
+
+
+.workexperience{
+    /*TODO: FIX IMAGE URL */
+    background-image: url("https://static.pexels.com/photos/397531/pexels-photo-397531.jpeg ");
+    background-size: cover;
+    height:900px ;
 }
 
 

@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="styles/template.css"/>
     <link rel="stylesheet" href="styles/timeline.css"/>
+    <!--TODO: FIX HREF FOR THIS STYLE-->
+    <link rel="stylesheet" href="OuterInnerBox.css" />
 </head>
 <body>
 <div class="row">
@@ -32,7 +34,7 @@
 
     </div>
 
-    <div class="col-md-6 default-box md-height background-cover buildings">
+    <div class="col-md-6 default-box background-cover buildings">
         <div class="card-board">
             <p class="text-left">
                 orem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae aliquet dolor. Sed at dolor euismod,
@@ -56,6 +58,31 @@
 <div class="container">e
     <div class="row">
         <div class="sm-card-board col-md-6">
+            <div class="background_image">
+            <h3>Who Am I ? </h3>
+            <p class="quote">
+                <span class="q">"</span> I believe in creativity in problem solving and I will
+                do my best to add this value to any
+                organization that will accept me as part of a team.<span class="q">"</span>
+                <br/>
+                <kbd><a href="">Read My Resume</a></kbd>
+
+            </p>
+        </div>
+        </div>
+        <div class="sm-card-board col-md-6">
+            <h3>Experience</h3>
+            <p class="quote">
+                Here is my personal note , from all my personal experience
+                with dif88ferent technologies , also you can see a snippet of personal
+                project I produced through creating this portfolio
+                <br/>
+                <kbd><a href="">See Note</a></kbd>
+
+            </p>
+        </div>
+
+        <div class="sm-card-board col-md-6">
             <h3>Who Am I ? </h3>
             <p class="quote">
                 <span class="q">"</span> I believe in creativity in problem solving and I will
@@ -78,6 +105,7 @@
 
             </p>
         </div>
+
     </div>
 
     <div class="row">
@@ -125,7 +153,9 @@
             </div>
             <div class="point" id="li-2"></div>
             <div class="line li-3">
-                <div class="li-3-content">sdfsdf</div>
+                <div class="li-3-content">
+                    <p>Monatomic-Gold</p>
+                </div>
             </div>
             <div class="point" id="li-3"></div>
             <div class="line li-4">
@@ -137,15 +167,32 @@
             </div>
         </div>
 
-
+        <div class="col-sm-4 workexperience"></div>
     </div>
 
 </div>
 
+<div class="row">
+    <div class="outer">
+        <div class="inner">
+        <h3 class="text-center">Header text</h3>
+            <p class="text-center" >
+                Lorem Impsum
+            </p>
+            </div>
+        </div>
+
+
+</div>
+
+
+<div class="row">
+    <div class="box"></div>
+
 </div>
 
 </div>
-<br/>
+
 <br/>
 <br/>
 <br/>
@@ -193,9 +240,10 @@
 
 
 <script
-        src="https://code.jquery.com/jquery-3.2.1.js"
-        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
         crossorigin="anonymous"></script>
+
 <script src="./scripts/ui.js"></script>
 
 <script>
@@ -209,6 +257,35 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 <script src="scripts/timeline/timeline.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+    $(function(){
+        // Bind the swipeHandler callback function to the swipe event on div.box
+        $( "div.box" ).on( "swiperight", rightSwipeHandler );
+        $( "div.box" ).on( "swipeleft", leftSwipeHandler );
+
+        // Callback function references the event target and adds the 'swipe' class to it
+        function rightSwipeHandler( event ){
+            $( event.target).addClass( "swipe" );
+            $(event.target).css({
+                "margin-left": "200px",
+                "transition":"0.5s"
+            });
+            console.log("DDDDDDOOOOONNNE!!!") ;
+        }
+
+        function leftSwipeHandler( event ){
+            $( event.target).addClass( "swipe" );
+            $(event.target).css({
+                "margin-left": "-200px",
+                "transition":"0.5s"
+            });
+            console.log("DDDDDDOOOOONNNE!!!") ;
+        }
+
+
+    });
+</script>
 
 </body>
 
